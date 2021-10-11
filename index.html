@@ -3,19 +3,36 @@
   <head>
     <title>Drive API Quickstart</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="/page.js"></script>
     <script src="/google.js"></script>
   </head>
   <body>
-    <p>Drive API Quickstart</p>
-
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize_button" style="display: none;">Authorize</button>
-    <button id="signout_button" style="display: none;">Sign Out</button>
-
-    <pre id="content" style="white-space: pre-wrap;"></pre>
-
-    
+    <header>
+      <img src="./DBR_Logo-Large_Light.png">
+        <nav>
+          <ul>
+              <li><a href="?#browse" class="stop-page-load-transition">Browse</a></li>
+              <li><a href="?#create" class="stop-page-load-transition">Create</a></li>
+              <li><a href="?#settings" class="stop-page-load-transition">Settings</a></li>
+              <li><input type="search" id="searchBar" placeholder="Search"></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="home" class="sub-page">
+        Home
+      </div>
+      <div id="browse" class="sub-page">
+        Browse
+      </div>
+      <div id="create" class="sub-page">
+        Create
+      </div>
+      <div id="settings" class="sub-page">
+        Settings
+      </div>
+    </main>
   </body>
 </html>

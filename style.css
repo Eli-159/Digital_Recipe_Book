@@ -1,0 +1,85 @@
+body {
+    background-color: #001433;
+    color: #e1e4ea;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    max-height: 200px;
+    display: block;
+}
+
+header > img {
+    width: 50%;
+    max-width: 300px;
+    display: inline-block;
+}
+
+header nav {
+    display: inline-block;
+    min-width: 280px;
+    max-width: 460px;
+    position: absolute;
+    margin-left: 5%;
+    top: 40px;
+}
+
+header nav > ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header nav > ul > li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav > ul > li > a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #e1e4ea;
+}
+
+header nav > ul > li:hover > a {
+    color: #ffcc00;
+}
+
+header nav > ul > li > a.active {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+header nav > ul > li > input[type="search"] {
+    border-radius: 15px;
+    width: 175px;
+    outline: none;
+    padding: 4px 8px;
+    background-color: #e1e4ea;
+    border: none;
+}
+
+header nav > ul > li > input[type="search"]::placeholder {
+    color: #697d96;
+}
+
+main > .sub-page {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+main > .sub-page:target {
+    display: block;
+}
