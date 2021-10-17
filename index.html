@@ -40,6 +40,53 @@
 
       <div id="create" class="sub-page">
         <h2>Create</h2>
+        <br>
+        <div class="form">
+          <label for="createRecipeName" class="required">Name</label>
+          <input type="text" id="createRecipeName">
+          <br>
+          <br>
+          <label>Categories</label>
+          <div class="indentedList">
+            <input type="checkbox" id="createRecipeCategory1">
+            <label for="createRecipeCategory1" class="checkbox" tabindex="0">Category</label>
+            <input type="checkbox" id="createRecipeCategory2">
+            <label for="createRecipeCategory2" class="checkbox" tabindex="0">Category</label>
+            <input type="checkbox" id="createRecipeCategory3">
+            <label for="createRecipeCategory3" class="checkbox" tabindex="0">Category</label>
+          </div>
+          <br>
+          <label>Ingredients</label>
+          <div class="indentedList">
+            <table>
+              <tr class="ingredientInputRow">
+                <td><input type="number" class="amountInput" placeholder="Amount"></td>
+                <td><input type="text" class="unitInput" placeholder="Unit"></td>
+                <td><input type="text" class="ingredientInput" placeholder="Ingredient"></td>
+              </tr>
+              <tr class="ingredientInputRow">
+                <td><input type="number" class="amountInput" placeholder="Amount"></td>
+                <td><input type="text" class="unitInput" placeholder="Unit"></td>
+                <td><input type="text" class="ingredientInput" placeholder="Ingredient"></td>
+              </tr>
+              <tr class="ingredientInputRow">
+                <td><input type="number" class="amountInput" placeholder="Amount"></td>
+                <td><input type="text" class="unitInput" placeholder="Unit"></td>
+                <td><input type="text" class="ingredientInput" placeholder="Ingredient"></td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          <label>Method</label>
+          <div class="indentedList">
+            <table>
+              <tr class="methodInputRow">
+                <td>1.</td>
+                <td><input type="text" placeholder="Instructions" class="inputMethodInstructions"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
 
 
